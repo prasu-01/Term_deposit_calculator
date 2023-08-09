@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Term Deposit Calculator</title>
+</head>
+<body>
+    
+    <section class="container">
+        <h3> Term Deposit Calculator </h3>
+        <form id="calcuator-form">
+            
+            <div>
+                <label for="initialAmount">Start deposit amount</label>          
+                <input id="initialAmount" />
+            </div>
+
+            <div>
+                <label for="interestRate"> Interest rate</label>
+                <input  id="interestRate" />
+            </div>
+
+            <div>
+                <label for="term">Investment term</label>
+                <input id="term" />
+            </div>
+
+            <div>
+                <label for="interval">Interest paid</label>
+                <select id="rate"> 
+                    <option value="12">
+                        Monthly
+                    </option>
+                    <option value="4">
+                        Quarterly
+                    </option>
+                    <option value="1">
+                        Annually
+                    </option>
+                    <option value="1">
+                        At Maturity
+                    </option>
+                </select>
+            </div>
+
+            <div>
+                <button type="submit">Final balance</button>
+            </div>
+
+        </form>
+
+        <div id="result"></div>
+    </section>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
